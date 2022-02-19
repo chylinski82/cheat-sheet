@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+        <h1>HTML & CSS cheat sheet</h1>
+    </header>
+    <div class="container">
+        <h2>HTML forms tags</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th class="description">Description</th>
+                    <th>Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-property">&lt;button&gt;</td>
+                    <td class="description">Represents a clickable button, used to submit forms <br/>
+                        or anywhere in a document for accessible, standard button functionality.</td>
+                    <td>formtarget, name, type, value</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;datalist&gt;</td>
+                    <td class="description">
+                        Contains a set of option elements that represent <br/>
+                        the permissible or recommended options available to choose from within other controls.
+                    </td>
+                    <td>only global attributes</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;fieldset&gt;</td>
+                    <td class="description">
+                        It is used to group several controls as well as labels (label) within a web form.
+                    </td>
+                    <td>disabled, form, name</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;form&gt;</td>
+                    <td class="description">
+                        Represents a document section containing interactive controls for submitting information.
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;input&gt;</td>
+                    <td class="description">
+                        It is used to create interactive controls for web-based forms <br/>
+                        in order to accept data from the user;<br/>
+                        a wide variety of types of input data and control widgets are available,<br/>
+                        depending on the device and user agent.<br/>
+                        The &lt;input&gt; element is one of the most powerful and complex in all of HTML <br/>
+                        due to the sheer number of combinations of input types and attributes.
+                    </td>
+                    <td>
+                        accept, alt, autocomplete, autofocuse, capture, checked,<br/>
+                        dirname, disabled, form, formaction, formenctype, formmethod,<br/>
+                        formnovalidate, formtarget, height, list, max, maxlength,<br/>
+                        min, minlength, multiple, name, pattern, placeholder, readonly,<br/>
+                        required, size, src, step, type, value, width
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;label&gt;</td>
+                    <td class="description">
+                        Represents a caption for an item in a user interface.
+                    </td>
+                    <td>for</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;legend&gt;</td>
+                    <td class="description">
+                        Represents a caption for the content of its parent fieldset.
+                    </td>
+                    <td>only global attributes</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;meter&gt;</td>
+                    <td class="description">Represents either a scalar value within a known range or a fractional value.</td>
+                    <td>value, min, max, low, high, optimum, form</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;optgroup&gt;</td>
+                    <td class="description">Creates a grouping of options within a select element.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;option&gt;</td>
+                    <td class="description">
+                        It is used to define an item contained in a select, an optgroup, or a datalist element.<br/> 
+                        As such, &lt;option&gt; can represent menu items in popups and other lists of items <br/>
+                        in an HTML document.
+                    </td>
+                    <td>disabled, label</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;output&gt;</td>
+                    <td class="description">
+                        It is a container element into which a site or app can inject the results <br/>
+                        of a calculation or the outcome of a user action.
+                    </td>
+                    <td>for, form ,name</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;progress&gt;</td>
+                    <td class="description">displays an indicator showing the completion progress of a task, <br/>
+                        typically displayed as a progress bar.
+                    </td>
+                    <td>max, value</td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;select&gt;</td>
+                    <td class="description">Represents a control that provides a menu of options.</td>
+                    <td>
+                        autocomplete, autofocus, disabled, form, multiple,<br/>
+                    name, required, size
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">&lt;textarea&gt;</td>
+                    <td class="description">
+                        Represents a multi-line plain-text editing control,<br/> 
+                        useful when you want to allow users to enter a sizeable amount of free-form text,<br/> 
+                        for example a comment on a review or feedback form.
+                    </td>
+                    <td>
+                        autocapitilize, autocomplete, autocorrect, autofocus, cols,<br/>
+                        disabled, form, maxlength, minlength, name, placeholder,<br/>
+                        readonly, required, rows, spellcheck, wrap
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>CSS flex properties</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Values</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="element-property">align-content</td>
+                    <td class="description">
+                        Sets the distribution of space between and around content items <br/>
+                        along a flexbox's cross-axis or a grid's block axis.
+                    </td>
+                    <td>
+                        center, start, end, flex-start, flex-end, normal, baseline, first baseline,<br/>
+                        last baseline, space-between, space-around, space-evenly, stretch,<br/>
+                        safe center, unsafe center
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">align-items</td>
+                    <td class="description">
+                        Sets the align-self value on all direct children as a group.<br/> 
+                        In Flexbox, it controls the alignment of items on the Cross Axis. <br/>
+                        In Grid Layout, it controls the alignment of items on the Block Axis within their grid area.
+                    </td>
+                    <td>
+                        normal, stretch, center, start, end, flex-start, flex-end, baseline,<br/>
+                        first baseline, last baseline, safe center, unsafe center
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">align-self</td>
+                    <td class="description">
+                        Overrides a grid or flex item's align-items value. <br/>
+                        In Grid, it aligns the item inside the grid area. <br/>
+                        In Flexbox, it aligns the item on the cross axis.
+                    </td>
+                    <td>
+                        auto, normal, center, start, end, self-start, self-end, flex-start,<br/>
+                        flex-end, baseline, first baseline, last baseline, stretch,<br/>
+                        safe center, unsafe center
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">flex</td>
+                    <td class="description">
+                        CSS shorthand property sets how a flex item will grow or shrink <br/>
+                        to fit the space available in its flex container.
+                    </td>
+                    <td>
+                        Constituents properties (flex-grow, flex-shrink, flex-basis)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">flex-grow</td>
+                    <td class="description">Sets the flex grow factor of a flex item's main size</td>
+                    <td>The flex-grow property is specified as a single &lt;number&gt;</td>
+                </tr>
+                <tr>
+                    <td class="element-property">flex-shrink</td>
+                    <td class="description">
+                        Sets the flex shrink factor of a flex item. <br/>
+                        If the size of all flex items is larger than the flex container, <br/>
+                        items shrink to fit according to flex-shrink.<br/>
+                        In use, flex-shrink is used alongside the other flex properties flex-grow and flex-basis, <br/>
+                        and normally defined using the flex shorthand.
+                    </td>
+                    <td>The flex-shrink property is specified as a single &lt;number&gt;</td>
+                </tr>
+                <tr>
+                    <td class="element-property">flex-basis</td>
+                    <td class="description">Sets the initial main size of a flex item. <br/>
+                        It sets the size of the content box unless otherwise set with box-sizing.
+                    </td>
+                    <td>
+                        &lt;width in em, px&gt;, auto, fill, max-content, min-content, fit-content,<br/>
+                        content
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">flex-direction</td>
+                    <td class="description">Sets how flex items are placed in the flex container <br/>
+                        defining the main axis and the direction (normal or reversed).
+                    </td>
+                    <td>row, row-reverse, column, column-reverse</td>
+                </tr>
+                <tr>
+                    <td class="element-property">flex-flow</td>
+                    <td class="description">Specifies the direction of a flex container, as well as its wrapping behavior.</td>
+                    <td>
+                        row, row-reverse, column, column-reverse, nowrap, wrap, wrap-reverse,<br/>
+                        row nowrap, column wrap, column-reverse wrap-reverse
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">flex-wrap</td>
+                    <td class="description">Sets whether flex items are forced onto one line or can wrap onto multiple lines. <br/>
+                        If wrapping is allowed, it sets the direction that lines are stacked</td>
+                    <td>nowrap, wrap, wrap-reverse</td>
+                </tr>
+                <tr>
+                    <td class="element-property">justify-content</td>
+                    <td class="description">
+                        Defines how the browser distributes space between and around content items<br/>
+                        along the main-axis of a flex container, and the inline axis of a grid container.
+                    </td>
+                    <td>
+                        center, start, end, flex-start, flex-end, left, right, normal, space-between,<br/>
+                        space-around, space-evenly, stretch, safe center, unsafe center
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element-property">order</td>
+                    <td class="description">
+                        Sets the order to lay out an item in a flex or grid container. <br/>
+                        Items in a container are sorted by ascending order value and then by their source code order
+                    </td>
+                    <td>&lt;integer&gt; values</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </body>
+</html>
